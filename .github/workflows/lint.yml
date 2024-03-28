@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Print PR Title
+      - name: Pull Request Created
         run: echo "Pull request with title '${{ github.event.pull_request.title }}' has been created."
   
       - name: Checkout Repository
