@@ -9,11 +9,6 @@ on:
       - 'release/**'
 
   workflow_call:
-    inputs:
-      branch:
-        description: 'Input Branch Name'
-        required: true
-        type: string
 
 jobs:
   lint:
