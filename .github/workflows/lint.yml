@@ -1,19 +1,7 @@
 name: Lint Python Code
 
 on:
-  pull_request:
-    paths:
-      - "**/*.py"
-    branches:
-      - main
-      - 'release/**'
-
   workflow_call:
-    inputs:
-      branch:
-        description: 'Input Branch Name'
-        required: true
-        type: string
 
 jobs:
   lint:
