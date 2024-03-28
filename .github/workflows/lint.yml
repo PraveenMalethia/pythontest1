@@ -3,6 +3,11 @@ name: Lint Python Code
 on:
   pull_request:
     types: [opened]
+    paths:
+      - "**/*.py"
+    branches:
+      - main
+      - 'release/**'
 
   workflow_dispatch:
 
@@ -11,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Pull Request Created
+      - name: Print PR Title
         run: echo "Pull request with title '${{ github.event.pull_request.title }}' has been created."
   
       - name: Checkout Repository
