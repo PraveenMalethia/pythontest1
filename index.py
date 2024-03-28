@@ -5,6 +5,6 @@ def main():
     print(random.randint(1,10))
     names = ("Parveen", "Parveen",
       )
-  
+    
 
 main()
