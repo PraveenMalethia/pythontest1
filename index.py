@@ -6,7 +6,6 @@ def main():
 
     names = ("Parveen", "Parveen",
       )
-    
-    
+
 
 main()
