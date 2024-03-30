@@ -8,12 +8,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Pull Request Details
-        run: echo "Pull request with title '${{ github.event.pull_request.title }}' has been created."
-  
-      - name: Checkout Repository
-        uses: actions/checkout@v3
-
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
