@@ -1,0 +1,13 @@
+name: Main Workflow
+
+on:
+  pull_request:
+
+jobs:
+  lint_python:
+    name: Lint Python Code
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Use Python Linting Workflow
+      uses: ./.github/workflows/lint_python.yml
