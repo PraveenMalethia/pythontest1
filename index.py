@@ -6,6 +6,8 @@ def main():
 
     names = ("Parveen", "Parveen",
       )
+    print("Another test")
+    print("Another test 2")
 
 
 main()
